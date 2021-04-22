@@ -15,6 +15,5 @@ How to launch :
 
 Thanks !
 
-![maquette 1](maquette_1.png?raw=true "Maquette")
-![maquette 2](maquette_2.png?raw=true)
-
+![](https://user-images.githubusercontent.com/47173805/115717417-72113500-a37a-11eb-981f-83ef6ef75594.PNG)
+![](https://user-images.githubusercontent.com/47173805/115717428-75a4bc00-a37a-11eb-84b5-a8e6fad14fff.PNG)
