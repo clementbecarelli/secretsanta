@@ -1,0 +1,47 @@
+div {
+  text-align: center;
+}
+
+h1,h5 {
+  padding-top: 20px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+Table {
+  background-color: #d6cdcd;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+Table thead tr {
+  background-color: #33373b;
+  color: #ffffff;
+  text-align: center;
+}
+
+Table th,
+Table td {
+    padding: 12px 15px;
+}
+
+Table tbody tr {
+  border-bottom: 1px solid #343a40;
+}
+
+Table tbody tr:last-of-type {
+  border-bottom: 2px solid #343a40;
+}
+
+hr {
+  width: 60%;
+  background-color: rgb(48, 0, 0);
+}
+
+
