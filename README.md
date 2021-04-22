@@ -14,3 +14,7 @@ How to launch :
 7. Try the app on localhost:3001
 
 Thanks !
+
+![maquette 1](maquette_1.png?raw=true "Maquette")
+![maquette 2](maquette_2.png?raw=true)
+
