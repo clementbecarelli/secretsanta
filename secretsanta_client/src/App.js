@@ -7,7 +7,8 @@ import Table from 'react-bootstrap/Table';
 import Form from 'react-bootstrap/Form';
 import Tooltip from 'react-bootstrap/Tooltip'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
-
+import Dropdown from 'react-bootstrap/Dropdown'
+import InputGroup from 'react-bootstrap/InputGroup'
 const App = () => {
 
   const [participantName, setParticipantName] = useState('');
@@ -108,13 +109,35 @@ const App = () => {
             <tr>
               <th>Number</th>
               <th>Name</th>
+              <th>Blacklist</th>
             </tr>
           </thead>
           <tbody>
             {participantsList.map((val, id) =>  {
               return (<tr>
-                      <td>{++id}</td>
-                      <td>{val}</td>
+                        <td>{++id}</td>
+                        <td>{val}</td>
+                        <td>
+                          <Dropdown>
+                            <Dropdown.Toggle size ="sm" variant="dark" id="dropdown-basic">
+                              {val}'s Blacklist
+                            </Dropdown.Toggle>
+                            <Dropdown.Menu>
+                              {// eslint-disable-next-line
+                              participantsList.map((val_2) =>  {
+                                if (val !== val_2)
+                                  return (
+                                    <InputGroup  size="sm" className="mb-1">
+                                      <InputGroup.Checkbox aria-label="Checkbox for following text input" />
+                                      <InputGroup.Append>
+                                        <InputGroup.Text id="basic-addon2">{val_2}</InputGroup.Text>
+                                      </InputGroup.Append> 
+                                    </InputGroup>
+                                  )  
+                              })}
+                            </Dropdown.Menu>
+                          </Dropdown>
+                        </td>
                     </tr>)
             })}
           </tbody>
